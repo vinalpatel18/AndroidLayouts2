@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/label1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textSize="30sp" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/label2"
+        android:text=""
+        android:textSize="30sp"
+        android:layout_below="@+id/label1"/>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/label"
+        android:textSize="30sp"
+        android:text="password"
+        android:layout_below="@+id/label2"/>
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:id="@+id/inputpassword"
+        android:layout_below="@+id/label"/>
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/inputpassword"
+        android:layout_marginRight="10px"
+        android:onClick="loginclick"
+        android:text="Login" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonCancel"
+        android:text="Cancel"
+        android:layout_alignTop="@+id/buttonLogin"
+        android:layout_toRightOf="@+id/buttonLogin"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonReg"
+        android:text="Registor new account"
+        android:layout_margin="30dip"
+        android:layout_below="@id/buttonCancel"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dip"
+        android:gravity="center"
+        android:padding="15dip"
+        android:text="go to table layout!"
+        android:layout_below="@id/buttonReg"
+        android:onClick="loginclick"/>
+
+</RelativeLayout>

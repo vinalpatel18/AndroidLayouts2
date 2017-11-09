@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Parent Linear LAyout with vertical orentation-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:padding="5dip"/>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"
+        android:id="@+id/inputEmailaddress"/>
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="loginclick"
+        android:text="Login" />
+
+    <!-- Child Linear Layout with horizontal orentation-->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#777fff"
+        android:layout_marginTop="5dip"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Home"
+            android:padding="15dip"
+            android:layout_weight="1"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="About"
+            android:layout_weight="1"
+            android:padding="15dip"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dip"
+        android:gravity="center"
+        android:padding="15dip"
+        android:text="go to Relative layout!"
+        android:id="@+id/buttonRelative"
+        android:onClick="loginclick"/>
+</LinearLayout>

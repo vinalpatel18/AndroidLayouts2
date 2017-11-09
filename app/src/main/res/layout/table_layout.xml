@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:shrinkColumns="*"
+    android:stretchColumns="*"
+    android:background="#ffffff">
+
+    <!-- Row 1 with single coloum-->
+    <TableRow>
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_Horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_span="3"
+            android:background="#b0b0b0"
+            android:padding="18dip"
+            android:text="ROW 1"
+            android:textColor="#000"
+            android:textSize="18dp" />
+    </TableRow>
+    <!-- Row 2 with 3 coloum-->
+    <TableRow>
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_Horizontal">
+
+        <TextView
+            android:id="@+id/textview1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text="ROW 2 coloum 1"
+
+            android:padding="18dip"
+            android:background="#d3d3d3"
+            android:textColor="#000"/>
+
+        <TextView
+            android:id="@+id/textview2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text="ROW 2 coloum 2"
+
+            android:padding="18dip"
+            android:background="#d3d3d3"
+            android:textColor="#000"/>
+
+        <TextView
+            android:id="@+id/textview3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text="ROW 2 coloum 3"
+
+            android:padding="18dip"
+            android:background="#d3d3d3"
+            android:textColor="#000"/>
+    </TableRow>
+    <!-- Row 3 with 2 coloum-->
+    <TableRow>
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_Horizontal">
+
+        <TextView
+            android:id="@+id/textview4"
+            android:textSize="18dp"
+            android:text="ROW 3 coloum 1"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:padding="20dip"
+            android:background="#b0b0b0"
+            android:textColor="#000"/>
+
+        <TextView
+            android:id="@+id/textview5"
+            android:textSize="18dp"
+            android:layout_weight="1"
+            android:text="ROW 3 coloum 2"
+            android:layout_gravity="center"
+            android:padding="20dip"
+            android:background="#b0b0b0"
+            android:textColor="#000"/>
+
+
+    </TableRow>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dip"
+        android:gravity="center"
+        android:onClick="Close"
+        android:padding="15dip"
+        android:text="go to Home!"/>
+
+
+</TableLayout>
